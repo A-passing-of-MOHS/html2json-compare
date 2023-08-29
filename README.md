@@ -1,18 +1,18 @@
 
 
-#功能介绍
+# 功能介绍
   本项目可以根据对照规则快速对比两个html文件中的tbody标签中的数据提取为json并比较两者的的差异，
   半自动测试脚本，仅对比可见数据，手动导入数据，脚本不侵入系统不操作网页不发起请求接口，
   针对页面数据进行对照处理，实现可视化json数据对比，
   快速对比用户可见数据，对于数据库表结构依赖性低，对接口返回依赖低，无需做字典或者业务数据格式化，
-#效果展示
+# 效果展示
   新旧系统对照
 ![image](https://github.com/A-passing-of-MOHS/html2json-compare/assets/48318560/1fbe9fdf-4d13-4b6f-8a16-cef809449d38)
 ![image](https://github.com/A-passing-of-MOHS/html2json-compare/assets/48318560/5d10951e-630a-43c4-ab70-b2c71a1fcba9)
 ![image](https://github.com/A-passing-of-MOHS/html2json-compare/assets/48318560/277979ce-4c30-42ce-bec9-47573ea4ce48)
 
 
-#快速开始
+# 快速开始
    (1).复制项目中的example文件夹并改名为自己测试的模块名，
    (2).复制系统中的tbody标签到对应文件html
    (3).确定新老数据对照规则保存在dataRule.json
@@ -21,7 +21,7 @@
  选中example文件夹复制 将名称名改为你业务的名称visaApplication，
 
 
-#导入数据
+## 导入数据
    确定好对应的搜索条件点击查询，分页选择1000条/页
 
    打开控制台 ->选择元素->找到页面中的<tbody>标签->选中tbody ->右键复制->复制元素
@@ -29,7 +29,7 @@
 老系统的粘贴到oldData.html
 新系统的粘贴到newData.html
 
-确定对应规则
+## 确定对应规则
 在dataRule.json用于存储数据对照规则，规则如下 
 "字段名": [老系统中列索引,新系统列索引] ，索引从0开始
 {
